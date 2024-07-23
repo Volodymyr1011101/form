@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import CalendarComponent from '../Calendar/Calendar';
-import styles from './Form.module.scss';
+import styles from './form.module.scss';
 interface Props {
     title: string;
 }

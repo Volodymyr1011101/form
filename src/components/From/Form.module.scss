@@ -36,11 +36,16 @@
     }
 }
 .ageInput {
-    @apply relative flex flex-col w-full gap-[37px];
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 37px;
 }
 .minAgeValue,
 .maxAgeValue {
-    @apply absolute top-[35px];
+    position: absolute;
+    top: 35px;
 }
 .minAgeValue {
     left: 0;
@@ -85,7 +90,10 @@
     border: 1px solid #cbb6e5;
 }
 .inputImageWrapper {
-    @apply flex flex-col gap-2 pt-[30px];
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 30px;
 }
 .uploadText {
     @apply text-active-input underline;
