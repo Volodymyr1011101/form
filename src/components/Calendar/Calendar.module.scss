@@ -1,0 +1,30 @@
+.calendar {
+    @apply max-w-[326px] h-fit;
+    border-radius: 8px;
+    border: 1px solid #cbb6e5;
+}
+.datePicker {
+    @apply flex flex-col gap-6;
+    @media screen and (min-width: 400px) {
+        @apply flex flex-row gap-6;
+    }
+}
+.timeCheckbox {
+    -webkit-appearance: none;
+    position: absolute;
+}
+.timeLabel {
+    @apply p-[10px] block rounded-[8px] border-solid border-[1px] border-time-slot-default;
+}
+.item .timeCheckbox:checked + .timeLabel {
+    @apply border-time-slot-active;
+}
+.timeList {
+    @apply flex flex-wrap gap-2;
+    @media screen and (min-width: 400px) {
+        li {
+            width: fit-content;
+        }
+        @apply flex flex-col gap-2;
+    }
+}
